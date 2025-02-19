@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./HeroStyles.module.css";
-import gojoo from "../../assets/gojo.png";
+import Gojo from "../../assets/Gojo.png";
 import sun from "../../assets/sun.svg";
 import moon from "../../assets/moon.svg";
 import twitterLight from "../../assets/twitter-light.svg";
@@ -23,7 +23,7 @@ function Hero() {
   return (
     <section id="hero" className={styles.container}>
       <div className={styles.colorModeContainer}>
-        <img className={styles.hero} src={gojoo} alt="Profile Picture of me" />
+        <img className={styles.hero} src={Gojo} alt="Profile Picture" />
         <img
           className={styles.colorMode}
           src={themeIcon}
