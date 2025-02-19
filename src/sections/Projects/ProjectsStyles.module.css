@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  
+    img {
+      width: 200px; /* Define a largura fixa para todas as imagens */
+      height: 200px; /* Define a altura fixa para todas as imagens */
+      object-fit: cover; /* Garante que as imagens preencham o container sem distorção */
+      align-self: center;
+      background-color: var(--project-card-bg);
+      border-radius: 20px;
+      
+    }
+  
+    a {
+      width: fit-content;
+      text-decoration: none;
+      color: #222;
+      transition: transform 200ms ease-in-out;
+    }
+  
+    a:hover {
+      transform: scale(1.05);
+    }
+  }
+  
+  .projectsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  @media (width >= 800px) {
+    .projectsContainer {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      padding: 0 30px;
+    }
+  }
+  
